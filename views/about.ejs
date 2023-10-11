@@ -1,0 +1,419 @@
+<%-include("header.ejs")%>
+
+<%-include("nav.ejs")%>
+
+  <main class="main-grid">
+          <div class="head">
+          <h1 class="page-title">About us</h1>
+          <p class="subtitle">Transforming a billion lives, one farm at a time. <br></p>
+          </div>
+          <img class="main-image" src="https://plus.unsplash.com/premium_photo-1664475377531-79df49523409?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fFNtYXJ0JTIwYWdyaWN1bHR1cmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="two men in a coworking space">
+          
+          <div class="main-text">
+              <h2 class="section-title">Nurturing a better tommorow</h2>
+<p>At GrowFarm ,we're dedicated to making farming easier for you. We provide crop recommendations for each season, along with guidance on the best soils for each crop. Our goal is to help you make the most of your land and grow healthy, bountiful harvests. Join us in your journey to successful farming!</p>            
+              <h2 class="section-title sub">We can do all sorts of great stuff </h2>
+              <p>"Our mission is to empower farmers with the knowledge they need to cultivate successful crops. At GROWFARM, we understand the significance of planting the right crop at the right time. Our platform is dedicated to providing accurate and up-to-date information on crop seasons, helping farmers make informed decisions that drive their agricultural success. We are committed to supporting the farming community in their journey towards prosperous harvests."</p>
+          </div>
+    
+  </main>
+  
+  <footer class="footer main-grid">
+    <div class="footer-text">
+        <h6>With Warm Regards</h6>
+      <p class="end">THE GROWFARM TEAM</p>
+      <p class="copyright">© farmgrow2023</p>
+    </div>
+    <div class="social">
+      <a href="#" class="facebook icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="twitter icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="instagram icon"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <style>
+    
+    h1 {
+   font-weight: 700;
+   color: #fff;
+   font-size: 1.75rem;
+}
+
+h2 {
+   font-weight: 700;
+   color: #000;
+   font-size: 1.75rem;
+}
+
+.intro {
+  font-size: 1.15rem;
+  margin-bottom: 2.5em;
+}
+
+span {
+   color: rgb(18, 58, 18);
+}
+
+.black {
+  font-weight: 700;
+  color: #000;
+}
+
+/*==== main-grid Layout ====*/
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+    grid-column-gap: 2em;
+}
+.main-grid p{
+    padding-top: 15px;
+}
+/* ==== Layout ====*/
+
+.header {
+  background: #000;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: row;
+  grid-column: 2 / -2;
+}
+
+
+
+
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 3rem;
+}
+
+
+
+
+
+h2 {
+   font-weight: 700;
+   color: #000;
+   font-size: 1.75rem;
+}
+
+.intro {
+  font-size: 1.15rem;
+  margin-bottom: 2.5em;
+}
+
+span {
+   color: rgb(18, 58, 18);
+}
+
+.black {
+  font-weight: 700;
+  color: #000;
+}
+
+/*==== main-grid Layout ====*/
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+    grid-column-gap: 2em;
+}
+
+/* ==== Layout ====*/
+
+.header {
+  background: #000;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: row;
+  grid-column: 2 / -2;
+}
+
+
+
+.navigation {
+  position: fixed;
+  background: #000;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(0);
+  transition: transform 250ms;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 3rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fda039;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.close-nav:hover,
+.close-nav:focus,
+.open-nav:hover,
+.open-nav:focus {
+  color: #fff;
+  cursor: pointer;
+}
+
+.open-nav {
+  border: 0;
+  background: 0;
+  color: #fff;
+  padding: .5em;
+  margin-left: auto;
+  font-size: 1em;
+}
+
+.navigation-open {
+  transform: translateX(-100%);
+}
+
+.close-nav {
+    border: 0;
+    background: 0;
+    color:rgb(18, 58, 18);
+    font-weight: 700;
+    font-size: 3rem;
+    padding: .5em;
+    position: absolute;
+}
+
+.current {
+  border-bottom: 1px solid rgb(18, 58, 18);
+};
+
+.current {
+  border-bottom: 1px solid rgb(18, 58, 18);
+}
+
+main {
+  background-color: #fff;
+  color: #000;
+  grid-column: 2 /-2;
+}
+
+  .head {
+  grid-column: 2 / -2;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.page-title {
+  color: #000;
+  font-size: 2.5rem;
+  justify-self: center;
+}
+
+.main-image {
+  grid-column: 2 / -2;
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+  box-shadow: 10px 10px 250px #000;
+}
+
+.main-text {
+  grid-column: 2 / -2;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin-top: 1em;
+  background: rgb(18, 58, 18);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub {
+  margin-top: 3em;
+}
+
+
+.footer > * {
+    grid-column: 2 / -2;
+}
+
+.footer {
+   background: rgb(18, 58, 18);  
+   color: #000;
+}
+
+.social {
+  order: -1;
+  font-size: 1.75rem;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon {
+  color: #000;
+}
+.icon:hover,
+.icon:focus {
+  cursor: mouse;
+  color: rgb(18, 58, 18);
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.end {
+  text-align: center;
+  margin-bottom: 0;
+}
+.copyright {
+  font-size: 1.1rem;
+  padding-top: 1em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.footer-text,
+.copyright {
+  opacity: .8;
+  }
+ 
+
+  @media (min-width: 600px) {
+      .main-grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(20px, 320px)) minmax(1em, 1fr);
+    }
+    
+    .open-nav,
+    .close-nav {
+      display: none;
+    }
+    
+    .navigation {
+      position: initial;
+    }
+    
+    .nav-list {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    
+    .nav-link {
+      margin-left: 1em;
+      font-size: 1.7rem;
+    }
+    
+    .logo {
+      padding: .5em 1em;
+      text-align: center;
+    }
+    
+    .head {
+      grid-column: 3 / -3;
+    }
+    
+.page-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: rgb(18, 58, 18);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+    
+    .main-image {
+      grid-column: 2;
+      margin-top: 1.3em;
+  
+    }
+    
+    .main-text {
+      grid-column: 3 / span 2;
+      margin-top: 0;
+    }
+    
+    .section-title::after {
+  margin-left: 0;
+}
+    
+    
+    
+    .footer {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+    
+    .footer-text {
+      grid-column: 2 / span 2;
+    }
+    
+    .social {
+      grid-column: span1;
+    }
+    
+    .icon {
+      margin: .5em;
+    }
+    
+    .footer-text {
+      width: 50vw;
+      margin-left: 0;
+      order: -1;
+    }
+    
+    .end,
+    .copyright {
+      text-align: start;
+    }
+  }
+
+@media(min-width: 700px) {
+  .page-title::after {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 5px;
+    background: rgb(18, 58, 18);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+}
+  </style>
+
+<%-include("footer.ejs")%>
